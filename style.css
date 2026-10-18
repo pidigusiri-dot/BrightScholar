@@ -1,0 +1,978 @@
+/* =========================================
+   SMARTSCHOLAR - GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f9fc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e8edf5;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #1e3a8a;
+}
+
+.logo-icon {
+    font-size: 27px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #2563eb;
+}
+
+.nav-button {
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #eff6ff,
+        #ffffff
+    );
+
+    padding: 90px 7%;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    background: #dbeafe;
+    color: #1d4ed8;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+
+    color: #172033;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-text p {
+    max-width: 650px;
+
+    color: #5b6472;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.secondary-button {
+    border: 1px solid #cbd5e1;
+    background: white;
+    color: #334155;
+}
+
+.secondary-button:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+
+/* Hero Card */
+
+.hero-card {
+    background: white;
+
+    border: 1px solid #e5eaf2;
+
+    border-radius: 16px;
+
+    padding: 32px;
+
+    box-shadow:
+        0 15px 40px rgba(30, 64, 175, 0.08);
+}
+
+.hero-card-icon {
+    font-size: 45px;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 25px;
+}
+
+.journey-step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.journey-step span {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.journey-step p {
+    color: #5b6472;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   COMMON SECTIONS
+========================================= */
+
+.find-section,
+.results-section,
+.about-section {
+    padding: 85px 7%;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+
+    margin: 10px 0 12px;
+}
+
+.section-heading p {
+    color: #667085;
+
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5eaf2;
+
+    box-shadow:
+        0 10px 35px rgba(15, 23, 42, 0.05);
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #344054;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 7px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 14px;
+
+    color: #344054;
+
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group small {
+    font-size: 12px;
+
+    color: #667085;
+}
+
+.find-button {
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 30px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.find-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   RESULTS
+========================================= */
+
+.results-section {
+    background: #f1f5f9;
+}
+
+.scholarship-results {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.empty-results {
+    grid-column: 1 / -1;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 55px 25px;
+
+    text-align: center;
+
+    border: 1px solid #e5eaf2;
+}
+
+.empty-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.empty-results h3 {
+    margin-bottom: 8px;
+}
+
+.empty-results p {
+    color: #667085;
+}
+
+
+/* Scholarship Card */
+
+.scholarship-card {
+    background: white;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 13px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.scholarship-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.scholarship-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+.scholarship-card h3 {
+    font-size: 20px;
+
+    color: #172033;
+}
+
+.amount-badge {
+    white-space: nowrap;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.scholarship-info {
+    display: grid;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #eef2f7;
+
+    font-size: 14px;
+}
+
+.info-row span:first-child {
+    color: #667085;
+}
+
+.info-row span:last-child {
+    font-weight: 600;
+
+    text-align: right;
+}
+
+.category-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+}
+
+.category-tag {
+    background: #eff6ff;
+
+    color: #1d4ed8;
+
+    padding: 4px 9px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.apply-button {
+    display: inline-block;
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 11px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.apply-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   AI SECTION
+========================================= */
+
+.ai-section {
+    padding: 85px 7%;
+
+    background: #ffffff;
+}
+
+.ai-container {
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+.ai-intro {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+}
+
+.ai-intro h2 {
+    font-size: 34px;
+
+    margin: 10px 0;
+}
+
+.ai-intro p {
+    color: #667085;
+}
+
+
+/* Chat */
+
+.chat-box {
+    max-width: 800px;
+
+    margin: auto;
+
+    border: 1px solid #dfe5ee;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.07);
+}
+
+.chat-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 18px 22px;
+
+    background: #f8fafc;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.ai-avatar {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #dbeafe;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.chat-header h3 {
+    font-size: 16px;
+}
+
+.chat-header span {
+    font-size: 12px;
+
+    color: #667085;
+}
+
+.chat-messages {
+    height: 330px;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    background: #ffffff;
+}
+
+.message {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.message-avatar {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+}
+
+.message-content {
+    max-width: 80%;
+
+    padding: 12px 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+
+.message-content ul {
+    margin-top: 8px;
+
+    padding-left: 20px;
+}
+
+.user-message {
+    justify-content: flex-end;
+}
+
+.user-message .message-content {
+    background: #2563eb;
+
+    color: white;
+}
+
+.chat-input-area {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.chat-input-area input {
+    flex: 1;
+
+    height: 45px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 7px;
+
+    padding: 0 14px;
+
+    outline: none;
+}
+
+.chat-input-area input:focus {
+    border-color: #2563eb;
+}
+
+.chat-input-area button {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 0 22px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-section {
+    background: #f8fafc;
+}
+
+.about-cards {
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.about-card {
+    background: white;
+
+    border: 1px solid #e5eaf2;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    text-align: center;
+}
+
+.about-icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.about-card h3 {
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #172033;
+
+    color: white;
+
+    padding: 35px 7%;
+}
+
+.footer-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-content h3 {
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .scholarship-results {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero,
+    .find-section,
+    .results-section,
+    .ai-section,
+    .about-section {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+}

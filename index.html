@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        SmartScholar | Find Scholarships
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <span class="logo-icon">
+                🎓
+            </span>
+
+            <span>
+                SmartScholar
+            </span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#find">
+                Find Scholarships
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#ai">
+                AI Assistant
+            </a>
+
+        </nav>
+
+
+        <a
+            href="#find"
+            class="nav-button"
+        >
+            Find Scholarship
+        </a>
+
+    </header>
+
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section
+        id="home"
+        class="hero"
+    >
+
+        <div class="hero-content">
+
+
+            <div class="hero-text">
+
+                <span class="hero-badge">
+                    🎓 Scholarship Discovery Platform
+                </span>
+
+
+                <h1>
+
+                    Find the Right
+
+                    <span>
+                        Scholarship
+                    </span>
+
+                    for You
+
+                </h1>
+
+
+                <p>
+
+                    SmartScholar helps students discover scholarships
+                    based on their education, income, category and
+                    other eligibility criteria.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#find"
+                        class="primary-button"
+                    >
+                        Find Scholarships →
+                    </a>
+
+
+                    <a
+                        href="#ai"
+                        class="secondary-button"
+                    >
+                        Ask AI Assistant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="hero-card">
+
+                <div class="hero-card-icon">
+                    🎓
+                </div>
+
+
+                <h3>
+                    Your Scholarship Journey
+                </h3>
+
+
+                <div class="journey-step">
+
+                    <span>
+                        1
+                    </span>
+
+                    <p>
+                        Enter your details
+                    </p>
+
+                </div>
+
+
+                <div class="journey-step">
+
+                    <span>
+                        2
+                    </span>
+
+                    <p>
+                        Check eligibility
+                    </p>
+
+                </div>
+
+
+                <div class="journey-step">
+
+                    <span>
+                        3
+                    </span>
+
+                    <p>
+                        Apply through official websites
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FIND SCHOLARSHIP ================= -->
+
+    <section
+        id="find"
+        class="find-section"
+    >
+
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                SCHOLARSHIP FINDER
+            </span>
+
+
+            <h2>
+                Tell us about yourself
+            </h2>
+
+
+            <p>
+
+                Enter your basic details and SmartScholar will
+                find scholarships that match your eligibility.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="form-container">
+
+
+            <form
+                id="scholarshipForm"
+            >
+
+
+                <div class="form-grid">
+
+
+                    <!-- ================= NAME ================= -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE ================= -->
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+
+                        <select
+                            id="course"
+                            required
+                        >
+
+                            <option value="">
+                                Select your course
+                            </option>
+
+
+                            <option value="B.Tech">
+                                B.Tech
+                            </option>
+
+
+                            <option value="B.Sc">
+                                B.Sc
+                            </option>
+
+
+                            <option value="B.Com">
+                                B.Com
+                            </option>
+
+
+                            <option value="M.Tech">
+                                M.Tech
+                            </option>
+
+
+                            <option value="MBA">
+                                MBA
+                            </option>
+
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= CGPA ================= -->
+
+                    <div class="form-group">
+
+                        <label for="cgpa">
+                            CGPA
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="cgpa"
+                            min="0"
+                            max="10"
+                            step="0.01"
+                            placeholder="Example: 8.5"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- ================= FAMILY INCOME ================= -->
+
+                    <div class="form-group">
+
+                        <label for="income">
+                            Annual Family Income
+                        </label>
+
+
+                        <input
+                            type="number"
+                            id="income"
+                            min="0"
+                            placeholder="Example: 250000"
+                            required
+                        >
+
+
+                        <small>
+                            Enter annual income in ₹
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- ================= STATE ================= -->
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+
+                        <select
+                            id="state"
+                            required
+                        >
+
+                            <option value="">
+                                Select your state
+                            </option>
+
+
+                            <option value="Andhra Pradesh">
+                                Andhra Pradesh
+                            </option>
+
+
+                            <option value="Telangana">
+                                Telangana
+                            </option>
+
+
+                            <option value="Karnataka">
+                                Karnataka
+                            </option>
+
+
+                            <option value="Tamil Nadu">
+                                Tamil Nadu
+                            </option>
+
+
+                            <option value="Maharashtra">
+                                Maharashtra
+                            </option>
+
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= CATEGORY ================= -->
+
+                    <div class="form-group">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+
+                        <select
+                            id="category"
+                            required
+                        >
+
+                            <option value="">
+                                Select category
+                            </option>
+
+
+                            <option value="General">
+                                General
+                            </option>
+
+
+                            <option value="OBC">
+                                OBC
+                            </option>
+
+
+                            <option value="SC">
+                                SC
+                            </option>
+
+
+                            <option value="ST">
+                                ST
+                            </option>
+
+
+                            <option value="EWS">
+                                EWS
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= GENDER ================= -->
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender
+                        </label>
+
+
+                        <select
+                            id="gender"
+                            required
+                        >
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- ================= AREA ================= -->
+
+                    <div class="form-group">
+
+                        <label for="area">
+                            Area / Location
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="area"
+                            placeholder="Example: Kakinada"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= SUBMIT ================= -->
+
+                <button
+                    type="submit"
+                    class="find-button"
+                >
+
+                    🔍 Find Eligible Scholarships
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RESULTS ================= -->
+
+    <section
+        id="results"
+        class="results-section"
+    >
+
+
+        <div class="section-heading">
+
+
+            <span class="section-label">
+                RESULTS
+            </span>
+
+
+            <h2>
+                Scholarships for You
+            </h2>
+
+
+            <p id="resultMessage">
+
+                Your matching scholarships will appear here.
+
+            </p>
+
+        </div>
+
+
+
+        <div
+            id="scholarshipResults"
+            class="scholarship-results"
+        >
+
+
+            <div class="empty-results">
+
+
+                <div class="empty-icon">
+                    🎓
+                </div>
+
+
+                <h3>
+                    No search performed yet
+                </h3>
+
+
+                <p>
+
+                    Enter your details above to discover
+                    scholarships you may be eligible for.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= AI ASSISTANT ================= -->
+
+    <section
+        id="ai"
+        class="ai-section"
+    >
+
+
+        <div class="ai-container">
+
+
+            <div class="ai-intro">
+
+
+                <span class="section-label">
+                    SMARTSCHOLAR AI
+                </span>
+
+
+                <h2>
+                    Have questions about scholarships?
+                </h2>
+
+
+                <p>
+
+                    Ask questions about eligibility, documents,
+                    applications and scholarship requirements.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="chat-box">
+
+
+                <div class="chat-header">
+
+
+                    <div class="ai-avatar">
+                        🤖
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            SmartScholar AI
+                        </h3>
+
+
+                        <span>
+                            Scholarship Assistant
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <div
+                    id="chatMessages"
+                    class="chat-messages"
+                >
+
+
+                    <div class="message ai-message">
+
+
+                        <div class="message-avatar">
+                            🤖
+                        </div>
+
+
+                        <div class="message-content">
+
+                            Hello! 👋 I'm SmartScholar AI.
+
+
+                            <br><br>
+
+
+                            You can ask me questions such as:
+
+
+                            <ul>
+
+                                <li>
+                                    What documents do I need?
+                                </li>
+
+
+                                <li>
+                                    How can I apply?
+                                </li>
+
+
+                                <li>
+                                    What is CGPA eligibility?
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <form
+                    id="chatForm"
+                    class="chat-input-area"
+                >
+
+
+                    <input
+                        type="text"
+                        id="chatInput"
+                        placeholder="Ask your scholarship question..."
+                        autocomplete="off"
+                    >
+
+
+                    <button type="submit">
+                        Send
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+        id="about"
+        class="about-section"
+    >
+
+
+        <div class="section-heading">
+
+
+            <span class="section-label">
+                ABOUT SMARTSCHOLAR
+            </span>
+
+
+            <h2>
+                Making scholarship discovery easier
+            </h2>
+
+
+            <p>
+
+                Scholarship information can be difficult to find
+                and eligibility requirements can be confusing.
+                SmartScholar brings relevant information together
+                in one simple platform.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="about-cards">
+
+
+            <div class="about-card">
+
+
+                <div class="about-icon">
+                    🔎
+                </div>
+
+
+                <h3>
+                    Easy Discovery
+                </h3>
+
+
+                <p>
+
+                    Find scholarships based on your personal
+                    and academic information.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="about-card">
+
+
+                <div class="about-icon">
+                    ✅
+                </div>
+
+
+                <h3>
+                    Eligibility Matching
+                </h3>
+
+
+                <p>
+
+                    Check whether scholarships match your
+                    eligibility requirements.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="about-card">
+
+
+                <div class="about-icon">
+                    🔗
+                </div>
+
+
+                <h3>
+                    Official Links
+                </h3>
+
+
+                <p>
+
+                    Access official scholarship application
+                    websites directly.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <div class="footer-content">
+
+
+            <div>
+
+
+                <h3>
+                    🎓 SmartScholar
+                </h3>
+
+
+                <p>
+
+                    Helping students discover opportunities
+                    for their education.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © 2026 SmartScholar
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
